@@ -1,0 +1,58 @@
+# ── SECRETS — never commit these ────────────────────────────────────────────
+# api_keys.json holds the user's Gemini API key in plaintext, plus their name and
+# personal settings. Committing it publishes a live credential to a public repo.
+config/api_keys.json
+config/*.json
+!config/defaults.json
+
+# TLS material for the phone dashboard
+config/certs/
+*.key
+*.crt
+*.pem
+*.pfx
+
+# ── USER DATA — personal, must never be published ───────────────────────────
+# long_term.json is everything the assistant knows about its user: name, city,
+# job, relationships, projects, wishes, and session summaries.
+memory/long_term.json
+memory/*.json
+
+# Runtime artefacts written by the action modules
+uploads/
+downloads/
+screenshots/
+macros/
+logs/
+*.log
+audit.jsonl
+
+# ── PYTHON ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+
+# ── BUILD OUTPUT (PyInstaller) ──────────────────────────────────────────────
+build/
+dist/
+*.manifest
+# Keep the checked-in spec file; ignore generated ones.
+!MarkL.spec
+
+# ── EDITORS / OS ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+desktop.ini
+.DS_Store

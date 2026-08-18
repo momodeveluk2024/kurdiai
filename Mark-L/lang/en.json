@@ -1,0 +1,772 @@
+{
+  "_meta": {
+    "language": "en",
+    "name": "English",
+    "direction": "ltr"
+  },
+  "app.window_title_suffix": {
+    "text": "MARK XLIX",
+    "maxLength": 12,
+    "note": "OS window/taskbar title is built as \"{ASSISTANT_NAME} — {this}\". Roman numeral suit designation (Iron Man reference). Treat as a brand code — normally left as-is, or transliterated at most."
+  },
+  "header.mark_badge": {
+    "text": "MARK XLIX",
+    "maxLength": 14,
+    "note": "Small dim badge in the top-left of the 54px header bar, Courier New 8pt, left of the gear button. Same brand code as the window title."
+  },
+  "header.settings_tooltip": {
+    "text": "Settings & Controls",
+    "maxLength": 40,
+    "note": "Mouse-hover tooltip on the small gear (⚙) button in the header that opens the quick-controls drawer. Tooltips float free, so length is relaxed."
+  },
+  "header.subtitle_jarvis": {
+    "text": "Just A Rather Very Intelligent System",
+    "maxLength": 46,
+    "note": "Tiny 7pt line directly under the big assistant name in the header. Only shown when the assistant is still named JARVIS — it is the JARVIS backronym. For Kurd AI this line is normally replaced by header.subtitle_generic; translate it as a tagline, not literally."
+  },
+  "header.subtitle_generic": {
+    "text": "Personal AI Assistant",
+    "maxLength": 40,
+    "note": "Tiny 7pt line under the assistant name in the header, shown whenever the assistant has a custom name (i.e. the normal case for Kurd AI). Centred, single line, must not wrap."
+  },
+  "monitor.title": {
+    "text": "SYS MONITOR",
+    "maxLength": 18,
+    "note": "Header of the left system-monitor column, Courier New 7pt bold, prefixed by a ◈ glyph. Left panel is 148px wide with 8px padding, so about 21 characters fit including the glyph — keep it well under that."
+  },
+  "monitor.cpu": {
+    "text": "CPU",
+    "maxLength": 5,
+    "note": "Label inside the CPU meter bar in the 148px left panel. Drawn in a 50px slot at 7pt with the live percentage right-aligned on the same row. Keep the Latin abbreviation unless a 3-letter native form exists."
+  },
+  "monitor.mem": {
+    "text": "MEM",
+    "maxLength": 5,
+    "note": "Label inside the RAM meter bar, same 50px slot as monitor.cpu. Short for 'memory'. Latin abbreviation is safest."
+  },
+  "monitor.net": {
+    "text": "NET",
+    "maxLength": 5,
+    "note": "Label inside the network-throughput meter bar; the value beside it reads e.g. '840KB/s'. Same 50px slot — 5 characters absolute maximum."
+  },
+  "monitor.gpu": {
+    "text": "GPU",
+    "maxLength": 5,
+    "note": "Label inside the graphics-card meter bar. GPU is a universal technical acronym — do NOT translate it."
+  },
+  "monitor.tmp": {
+    "text": "TMP",
+    "maxLength": 5,
+    "note": "Label inside the CPU-temperature meter bar; value reads e.g. '54°C'. Abbreviation of 'temperature'. Same 50px slot."
+  },
+  "monitor.value_na": {
+    "text": "N/A",
+    "maxLength": 6,
+    "note": "Shown as the meter value when GPU or temperature cannot be read (no NVIDIA driver / no thermal sensor). Right-aligned at 9pt inside the 148px panel."
+  },
+  "monitor.uptime": {
+    "text": "UP",
+    "maxLength": 6,
+    "note": "Prefix of the uptime row in the small info box under the meters; rendered as '{this}  05:23' (hours:minutes since boot) at 8pt bold. The clock digits take 7 characters of the ~18-character row."
+  },
+  "monitor.proc": {
+    "text": "PROC",
+    "maxLength": 8,
+    "note": "Prefix of the running-process-count row in the info box, rendered as '{this}  312'. Abbreviation of 'processes'."
+  },
+  "monitor.os": {
+    "text": "OS",
+    "maxLength": 6,
+    "note": "Prefix of the operating-system row in the info box, rendered as '{this}  WIN'. 'Operating system' — keep it to an abbreviation."
+  },
+  "monitor.os_windows": {
+    "text": "WIN",
+    "maxLength": 6,
+    "note": "Value of the OS row when running on Windows. Product name — keep as Latin 'WIN'."
+  },
+  "monitor.os_mac": {
+    "text": "macOS",
+    "maxLength": 6,
+    "note": "Value of the OS row on Apple machines. Product name — do not translate."
+  },
+  "monitor.os_linux": {
+    "text": "LINUX",
+    "maxLength": 6,
+    "note": "Value of the OS row on Linux. Product name — do not translate."
+  },
+  "badge.ai_core_active": {
+    "text": "AI CORE\nACTIVE",
+    "maxLength": 20,
+    "note": "Green status plaque at the bottom of the 148px left panel, 7pt bold, centred, deliberately split over two lines with \\n. Keep the \\n and keep each line at most ~9 characters. Means 'the AI engine is running'."
+  },
+  "badge.sec_cleared": {
+    "text": "SEC\nCLEARED",
+    "maxLength": 20,
+    "note": "Second status plaque below badge.ai_core_active. Sci-fi flavour text meaning 'security clearance granted'. Two lines via \\n, each line ~9 characters max."
+  },
+  "badge.protocol_xlix": {
+    "text": "PROTOCOL\nXLIX",
+    "maxLength": 20,
+    "note": "Third status plaque, dimmest. 'XLIX' is the Roman numeral 49 (the suit mark) — leave the numeral untranslated. Two lines via \\n, ~9 characters per line."
+  },
+  "state.listening": {
+    "text": "LISTENING",
+    "maxLength": 14,
+    "note": "Large centred status word under the arc reactor, Courier New 11pt bold, preceded by a blinking ● glyph the code adds. Means the microphone is open and waiting for speech."
+  },
+  "state.speaking": {
+    "text": "SPEAKING",
+    "maxLength": 14,
+    "note": "Same centred status slot under the arc reactor, orange, while the assistant's voice is playing."
+  },
+  "state.thinking": {
+    "text": "THINKING",
+    "maxLength": 14,
+    "note": "Same centred status slot, yellow, while the model is generating an answer."
+  },
+  "state.processing": {
+    "text": "PROCESSING",
+    "maxLength": 14,
+    "note": "Same centred status slot, yellow, while a tool/action (file, camera, web) is being carried out."
+  },
+  "state.muted": {
+    "text": "MUTED",
+    "maxLength": 14,
+    "note": "Same centred status slot, red, when the microphone has been muted with F4 or the mic button."
+  },
+  "state.sleeping": {
+    "text": "SLEEPING",
+    "maxLength": 14,
+    "note": "Same centred status slot — idle/standby state pushed in from the voice engine, waiting for the wake word."
+  },
+  "state.initialising": {
+    "text": "INITIALISING",
+    "maxLength": 14,
+    "note": "Same centred status slot; the very first state at start-up before the assistant is ready. Longest of the state words — 14 characters is the hard ceiling."
+  },
+  "log.title": {
+    "text": "ACTIVITY LOG",
+    "maxLength": 24,
+    "note": "Section header above the scrolling conversation log in the 340px right column, 7pt bold, prefixed by a ▸ glyph the code adds."
+  },
+  "log.you_prefix": {
+    "text": "You:",
+    "maxLength": 10,
+    "note": "Prefix on log lines echoing what the user typed in the command box, e.g. 'You: open youtube'. WARNING: the legacy colour-inference code also matches the literal English 'you:' — after translation the caller must pass the explicit tag 'you' or the line loses its white colour."
+  },
+  "log.mic_muted": {
+    "text": "Microphone muted.",
+    "maxLength": 60,
+    "note": "Activity-log line written when the user mutes the mic (F4 or the mic button). The log wraps at roughly 45 characters at 9pt, so short sentences read best."
+  },
+  "log.mic_active": {
+    "text": "Microphone active.",
+    "maxLength": 60,
+    "note": "Activity-log line written when the mic is unmuted again."
+  },
+  "log.file_loaded": {
+    "text": "{name} ({size}) loaded",
+    "maxLength": 60,
+    "note": "Activity-log line after a file is dropped or picked. {name} is the file name, {size} a formatted size like '2.4 MB'. Keep both placeholders."
+  },
+  "log.shortcut_created": {
+    "text": "Desktop shortcut created.",
+    "maxLength": 60,
+    "note": "Activity-log confirmation after 'CREATE DESKTOP SHORTCUT' succeeds."
+  },
+  "log.shortcut_failed": {
+    "text": "Shortcut failed — {error}",
+    "maxLength": 60,
+    "note": "Activity-log line when creating the desktop shortcut fails. {error} is an untranslated technical message appended by Python."
+  },
+  "log.autostart_enabled": {
+    "text": "Auto-start enabled.",
+    "maxLength": 60,
+    "note": "Activity-log line after switching AUTO-START on (the app will launch when the computer starts)."
+  },
+  "log.autostart_disabled": {
+    "text": "Auto-start disabled.",
+    "maxLength": 60,
+    "note": "Activity-log line after switching AUTO-START off."
+  },
+  "log.autostart_failed": {
+    "text": "Auto-start failed — {error}",
+    "maxLength": 60,
+    "note": "Activity-log line when registering/removing auto-start fails (registry or file permissions). {error} stays untranslated."
+  },
+  "log.remote_unavailable": {
+    "text": "Dashboard not running — remote unavailable.",
+    "maxLength": 70,
+    "note": "Activity-log line when the user taps REMOTE CONTROL but the background web dashboard that serves the phone UI is not running."
+  },
+  "log.remote_key_failed": {
+    "text": "Could not generate remote key.",
+    "maxLength": 70,
+    "note": "Activity-log line when the pairing code for phone remote control could not be created."
+  },
+  "log.remote_key_generated": {
+    "text": "Remote key generated — manual: {url}",
+    "maxLength": 70,
+    "note": "Activity-log line after a pairing code is created; {url} is the address the phone should open. Keep the placeholder."
+  },
+  "log.identity_updated": {
+    "text": "Identity updated — {name}",
+    "maxLength": 60,
+    "note": "Activity-log line after the user renames the assistant in the customise panel. {name} is the new assistant name."
+  },
+  "log.ui_colour_applied": {
+    "text": "UI colour applied — {hex}",
+    "maxLength": 60,
+    "note": "Activity-log line after a new accent colour is saved. {hex} is a colour code like '#00d4ff'."
+  },
+  "log.config_save_failed": {
+    "text": "Config save failed — {error}",
+    "maxLength": 60,
+    "note": "Activity-log line when writing the settings file fails. {error} stays untranslated."
+  },
+  "log.initialised": {
+    "text": "Initialised. OS={os}. {name} online.",
+    "maxLength": 70,
+    "note": "First activity-log line after the setup panel is completed. {os} is WINDOWS/MAC/LINUX, {name} is the assistant name (never translate the name itself)."
+  },
+  "upload.title": {
+    "text": "FILE UPLOAD",
+    "maxLength": 24,
+    "note": "Section header above the drag-and-drop zone in the 340px right column, 7pt bold, prefixed by a ▸ glyph."
+  },
+  "upload.drop_hint": {
+    "text": "Drop file here  or  Click to Browse",
+    "maxLength": 44,
+    "note": "Main line inside the empty 100px-tall dashed drop zone, centred at 8pt under a drawn up-arrow icon. About 48 characters fit on one line; it must not wrap. Use whatever word Kurdish speakers actually say for browsing/choosing a file."
+  },
+  "upload.accepted_types": {
+    "text": "Images · Video · Audio · PDF · Docs · Code · Data",
+    "maxLength": 52,
+    "note": "Very dim second line inside the empty drop zone, 7pt, listing accepted file kinds separated by ' · '. Keep the separators. 'PDF' and 'Code' are normally left in Latin."
+  },
+  "upload.release": {
+    "text": "Release to load",
+    "maxLength": 44,
+    "note": "Replaces the drop-zone text while a file is being dragged over it — i.e. 'let go of the mouse button now'. Centred at 8pt bold under a ⬇ glyph."
+  },
+  "upload.ext_fallback": {
+    "text": "FILE",
+    "maxLength": 6,
+    "note": "Shown where the uppercase file extension normally goes (e.g. 'PDF · 2.4 MB') when a dropped file has no extension at all."
+  },
+  "upload.no_file": {
+    "text": "No file loaded — drop or click above to upload",
+    "maxLength": 60,
+    "note": "Grey hint line directly beneath the drop zone while nothing is loaded. It word-wraps across the 324px column, so two short lines are acceptable."
+  },
+  "upload.file_ready_hint": {
+    "text": "Tell {name} what to do with it",
+    "maxLength": 44,
+    "note": "Tail of the hint line under the drop zone once a file is loaded; the full line reads '{icon}  {filename}  ·  {size}  ·  {this}'. {name} is the assistant's name — never translate the name."
+  },
+  "upload.dialog_title": {
+    "text": "Select a file",
+    "maxLength": 40,
+    "note": "Title bar of the native OS 'open file' dialog opened by clicking the drop zone. (Source currently reads 'Select a file for JARVIS'; use the assistant name only if you keep a placeholder for it.)"
+  },
+  "upload.filter_all": {
+    "text": "All Files",
+    "maxLength": 24,
+    "note": "File-type filter entry in the native open-file dialog dropdown; the '(*.*)' pattern is appended automatically and must not be translated."
+  },
+  "upload.filter_images": {
+    "text": "Images",
+    "maxLength": 24,
+    "note": "File-type filter for pictures (jpg, png, gif, webp…) in the open-file dialog dropdown."
+  },
+  "upload.filter_documents": {
+    "text": "Documents",
+    "maxLength": 24,
+    "note": "File-type filter for pdf/docx/txt/md/pptx in the open-file dialog dropdown."
+  },
+  "upload.filter_data": {
+    "text": "Data",
+    "maxLength": 24,
+    "note": "File-type filter for csv/xlsx/json/xml in the open-file dialog dropdown — spreadsheet and structured-data files."
+  },
+  "upload.filter_code": {
+    "text": "Code",
+    "maxLength": 24,
+    "note": "File-type filter for source-code files (py, js, html…) in the open-file dialog dropdown."
+  },
+  "upload.filter_audio": {
+    "text": "Audio",
+    "maxLength": 24,
+    "note": "File-type filter for sound files (mp3, wav, flac…) in the open-file dialog dropdown."
+  },
+  "upload.filter_video": {
+    "text": "Video",
+    "maxLength": 24,
+    "note": "File-type filter for video files (mp4, mkv, mov…) in the open-file dialog dropdown."
+  },
+  "upload.filter_archives": {
+    "text": "Archives",
+    "maxLength": 24,
+    "note": "File-type filter for compressed archives (zip, rar, 7z…) in the open-file dialog dropdown."
+  },
+  "input.title": {
+    "text": "COMMAND INPUT",
+    "maxLength": 24,
+    "note": "Section header above the typing box in the right column, 7pt bold, prefixed by a ▸ glyph."
+  },
+  "input.placeholder": {
+    "text": "Type a command or question…",
+    "maxLength": 34,
+    "note": "Grey placeholder inside the single-line text box at the bottom right, 9pt, box is ~284px wide so roughly 34 characters fit. Keep the ellipsis character."
+  },
+  "input.interrupt_button": {
+    "text": "INTERRUPT  [ESC]",
+    "maxLength": 24,
+    "note": "Red full-width button under the command box that stops the assistant mid-sentence. The code prefixes a ✋ glyph; '[ESC]' is the keyboard key and must stay Latin."
+  },
+  "mic.active": {
+    "text": "MICROPHONE ACTIVE",
+    "maxLength": 26,
+    "note": "Green full-width toggle button at the bottom of the right column when the mic is live. The code prefixes a 🎙 glyph. Use the everyday word for microphone, loanword included."
+  },
+  "mic.muted": {
+    "text": "MICROPHONE MUTED",
+    "maxLength": 26,
+    "note": "Same toggle button turned red when the mic is muted; the code prefixes a 🔇 glyph."
+  },
+  "content.title_default": {
+    "text": "BRIEFING",
+    "maxLength": 24,
+    "note": "Default heading of the collapsible results panel beneath the HUD (used for the morning briefing, search results and news). 8pt bold; callers may replace it with their own title, which is uppercased and cut at 48 characters."
+  },
+  "content.dismiss": {
+    "text": "DISMISS",
+    "maxLength": 14,
+    "note": "Small 18px-tall button in the top-right of the results panel that hides it; the code appends a ✕ glyph."
+  },
+  "camera.feed_title": {
+    "text": "CAMERA FEED",
+    "maxLength": 22,
+    "note": "Header of the live webcam view that replaces the arc reactor while the camera is streaming, 8pt bold with a ◈ glyph prefix."
+  },
+  "camera.close": {
+    "text": "CLOSE",
+    "maxLength": 12,
+    "note": "Small button in the live-camera header that stops the stream and brings the arc reactor back; the code prefixes a ✕ glyph."
+  },
+  "camera.preview_title": {
+    "text": "VISUAL INPUT",
+    "maxLength": 22,
+    "note": "Header of the small 244px-wide floating popup that briefly shows the still frame the assistant just captured from the webcam. 7pt bold, ◈ glyph prefix, with a ✕ close button to its right."
+  },
+  "drawer.title": {
+    "text": "CONTROLS",
+    "maxLength": 20,
+    "note": "Header of the quick-controls drawer that drops down from the gear button. The drawer is a fixed 220px wide, so roughly 30 characters fit at 7pt including the ◈ glyph."
+  },
+  "drawer.remote": {
+    "text": "REMOTE CONTROL",
+    "maxLength": 22,
+    "note": "First button in the 220px drawer — opens the QR pairing panel so a phone can drive the assistant. 8pt bold, left-aligned, ◉ glyph prefix; about 25 characters of usable width."
+  },
+  "drawer.fullscreen": {
+    "text": "FULLSCREEN  [F11]",
+    "maxLength": 26,
+    "note": "Drawer button that toggles fullscreen. 7pt, ⛶ glyph prefix. '[F11]' is a keyboard key and must stay Latin."
+  },
+  "drawer.create_shortcut": {
+    "text": "CREATE DESKTOP SHORTCUT",
+    "maxLength": 28,
+    "note": "Drawer button that puts a launcher icon on the desktop. 7pt, ⊞ glyph prefix, 220px drawer — 28 characters is the practical ceiling. Use the word people actually use for a desktop shortcut."
+  },
+  "drawer.autostart_on": {
+    "text": "AUTO-START: ON",
+    "maxLength": 26,
+    "note": "Drawer toggle shown green when the app is registered to launch when the computer boots. ◉ glyph prefix. Keep the ': ON' pattern parallel with drawer.autostart_off."
+  },
+  "drawer.autostart_off": {
+    "text": "AUTO-START: OFF",
+    "maxLength": 26,
+    "note": "Same drawer toggle in its dim OFF state. Keep the wording identical to drawer.autostart_on apart from the ON/OFF word."
+  },
+  "drawer.customise": {
+    "text": "CUSTOMISE ASSISTANT",
+    "maxLength": 28,
+    "note": "Drawer button that opens the panel for changing the assistant's name, the user's name and the interface colour. 7pt, ⚙ glyph prefix."
+  },
+  "drawer.brief_on": {
+    "text": "MORNING BRIEF: ON",
+    "maxLength": 26,
+    "note": "Drawer toggle, green when the assistant reads a daily morning briefing (weather, news, calendar) at start-up. ☀ glyph prefix."
+  },
+  "drawer.brief_off": {
+    "text": "MORNING BRIEF: OFF",
+    "maxLength": 26,
+    "note": "Same drawer toggle in its dim OFF state. Keep parallel with drawer.brief_on."
+  },
+  "drawer.about": {
+    "text": "ABOUT",
+    "maxLength": 12,
+    "note": "Last drawer button, rendered as 'ⓘ  {this}  ·  v1.0.0' — the version number is appended by the code, so only about 12 characters are free."
+  },
+  "footer.hint_mute": {
+    "text": "[F4] Mute",
+    "maxLength": 16,
+    "note": "Left half of the 22px-tall status bar at the very bottom, 7pt. Joined to footer.hint_fullscreen with '  ·  '. '[F4]' is a keyboard key — keep it Latin and keep it first."
+  },
+  "footer.hint_fullscreen": {
+    "text": "[F11] Fullscreen",
+    "maxLength": 20,
+    "note": "Right half of the same bottom-bar hint pair. '[F11]' is a keyboard key — keep it Latin and keep it first."
+  },
+  "footer.credit": {
+    "text": "By FatihMakes",
+    "maxLength": 24,
+    "note": "Dim credit at the far right of the bottom status bar. Only the word 'By' is translatable — the author handle must stay exactly as written."
+  },
+  "setup.title": {
+    "text": "INITIALISATION REQUIRED",
+    "maxLength": 30,
+    "note": "Big heading of the first-run setup overlay (460×390px, 13pt bold, ◈ glyph prefix). Means 'you must configure the app before it can start'."
+  },
+  "setup.subtitle": {
+    "text": "Configure {name} before first boot.",
+    "maxLength": 50,
+    "note": "Dim line under setup.title, 9pt, single line across the 400px inner width. {name} is the assistant name — never translate the name itself."
+  },
+  "setup.apikey_label": {
+    "text": "GEMINI API KEY",
+    "maxLength": 24,
+    "note": "Small left-aligned label above the password-style field where the user pastes their Google Gemini key. 'Gemini' and 'API' are product/technical terms — keep them Latin."
+  },
+  "setup.apikey_placeholder": {
+    "text": "AIza…",
+    "maxLength": 12,
+    "note": "Placeholder inside the API-key field showing what a real key looks like. DO NOT TRANSLATE — every Google API key literally starts with these characters."
+  },
+  "setup.os_label": {
+    "text": "OPERATING SYSTEM",
+    "maxLength": 24,
+    "note": "Small left-aligned label above the three OS choice buttons in the setup overlay."
+  },
+  "setup.autodetected": {
+    "text": "Auto-detected: {os}",
+    "maxLength": 40,
+    "note": "Yellow line under setup.os_label telling the user which system the app found by itself. {os} is filled with setup.os_windows / setup.os_mac / setup.os_linux."
+  },
+  "setup.os_windows": {
+    "text": "Windows",
+    "maxLength": 12,
+    "note": "First of three OS buttons sharing a 400px row (about 129px each, so ~12 characters after the ⊞ glyph the code prefixes). Microsoft product name — do not translate."
+  },
+  "setup.os_mac": {
+    "text": "macOS",
+    "maxLength": 12,
+    "note": "Middle OS button in the same 3-button row. Apple product name — do not translate."
+  },
+  "setup.os_linux": {
+    "text": "Linux",
+    "maxLength": 12,
+    "note": "Third OS button in the same row, with a 🐧 penguin glyph prefix. Product name — do not translate."
+  },
+  "setup.submit": {
+    "text": "INITIALISE SYSTEMS",
+    "maxLength": 30,
+    "note": "Big confirm button at the bottom of the setup overlay, 10pt bold, full 400px width, ▸ glyph prefix. Means 'save this and start the assistant'."
+  },
+  "customise.title": {
+    "text": "CUSTOMISE ASSISTANT",
+    "maxLength": 28,
+    "note": "Heading of the 400×500px customise overlay, 12pt bold with a ⚙ glyph prefix — about 33 characters fit including the glyph."
+  },
+  "customise.assistant_name_label": {
+    "text": "ASSISTANT NAME",
+    "maxLength": 28,
+    "note": "Small left-aligned label above the field where the user renames the assistant (default 'Kurd AI')."
+  },
+  "customise.user_name_label": {
+    "text": "YOUR NAME  (leave blank for default)",
+    "maxLength": 52,
+    "note": "Small left-aligned label above the field for the user's own name — how the assistant will address them. If left empty the assistant falls back to a respectful default form of address ('sir' in English). Single 8pt line, roughly 55 characters fit; the source string also lists the Turkish default 'efendim', so replace that with the natural Kurdish honorific instead."
+  },
+  "customise.user_name_placeholder": {
+    "text": "e.g.  Tony   (leave blank for auto)",
+    "maxLength": 38,
+    "note": "Placeholder inside the user-name field. 'Tony' is a Tony Stark joke — swap it for a common local first name. About 38 characters fit at 10pt."
+  },
+  "customise.colour_label": {
+    "text": "UI COLOUR  —  drag the handle",
+    "maxLength": 40,
+    "note": "Label above the circular hue wheel, sharing its row with the DEFAULT button, so ~40 characters remain. 'Drag the handle' refers to the small white dot the user drags around the colour ring."
+  },
+  "customise.colour_default": {
+    "text": "DEFAULT",
+    "maxLength": 9,
+    "note": "Very small button (fixed 64×20px, 7pt bold) beside the colour label that resets the interface to the original cyan. VERY TIGHT — 9 characters absolute maximum."
+  },
+  "customise.hex_placeholder": {
+    "text": "#00d4ff   (custom hex colour)",
+    "maxLength": 34,
+    "note": "Placeholder in the text box under the colour wheel where an exact colour code can be typed. Keep the '#00d4ff' sample untranslated; only the parenthetical is translatable."
+  },
+  "customise.apply": {
+    "text": "APPLY CHANGES",
+    "maxLength": 18,
+    "note": "Confirm button at the bottom of the customise overlay, sharing a row with CANCEL (about 172px each), 9pt bold, ▸ glyph prefix — leaves roughly 18 characters."
+  },
+  "customise.cancel": {
+    "text": "CANCEL",
+    "maxLength": 20,
+    "note": "Second button in that row; discards the edits and reverts the live colour preview."
+  },
+  "remote.title": {
+    "text": "REMOTE ACCESS",
+    "maxLength": 26,
+    "note": "Heading of the 400×465px phone-pairing overlay, 12pt bold with a ◈ glyph prefix. Means controlling the assistant from a phone."
+  },
+  "remote.scan_hint": {
+    "text": "Scan with phone camera to connect instantly",
+    "maxLength": 48,
+    "note": "Dim line under the QR code, 8pt, word-wrapping allowed across the 352px inner width. Tells the user to point their phone camera at the QR square."
+  },
+  "remote.manual_label": {
+    "text": "Or enter manually:",
+    "maxLength": 30,
+    "note": "Tiny left-aligned label introducing the fallback web address and pairing code shown beneath it, for users whose camera cannot scan the QR."
+  },
+  "remote.key_expires": {
+    "text": "Key expires in  {mm}:{ss}",
+    "maxLength": 30,
+    "note": "Live countdown under the big pairing code, 8pt centred. {mm}:{ss} is a minutes:seconds timer (10 minutes) and takes 5 of the characters. Says how long the code stays valid."
+  },
+  "remote.connected": {
+    "text": "CONNECTED",
+    "maxLength": 9,
+    "note": "TIGHTEST STRING IN THE APP. Replaces the pairing code once a phone pairs successfully — drawn at 28pt bold with 10px extra letter-spacing in a 352px box, so only about 9 characters fit. If no 9-character word exists, use a short one (the equivalent of 'LINKED' / 'ONLINE') and say so."
+  },
+  "remote.connected_hint": {
+    "text": "Phone connected — {name} ready",
+    "maxLength": 44,
+    "note": "Green line replacing the countdown once a phone pairs. {name} is the assistant name — never translate the name."
+  },
+  "remote.new_key": {
+    "text": "NEW KEY",
+    "maxLength": 20,
+    "note": "Button at the bottom of the pairing overlay that throws away the current code and generates a fresh one. Shares a 352px row with remote.dismiss (about 26 characters each at 8pt bold)."
+  },
+  "remote.dismiss": {
+    "text": "DISMISS",
+    "maxLength": 20,
+    "note": "Second button in that row; closes the pairing overlay without pairing."
+  },
+  "remote.qr_missing_lib": {
+    "text": "pip install\nqrcode[pil]",
+    "maxLength": 28,
+    "note": "Shown inside the white QR square when the Python 'qrcode' library is not installed. DO NOT TRANSLATE — it is a literal terminal command. Two lines split by \\n; the budget is for the whole string, each individual line must stay under ~14 characters at 8pt."
+  },
+  "about.created_by": {
+    "text": "CREATED BY",
+    "maxLength": 24,
+    "note": "Tiny centred caption above the author's name in the About overlay (380×470px), 7pt bold. The name itself, the app title, the version, the tagline, the social-link labels and the copyright line all come from branding.py and are not part of this catalogue."
+  },
+  "about.close": {
+    "text": "CLOSE",
+    "maxLength": 20,
+    "note": "Full-width button at the bottom of the About overlay that hides it. 8pt bold across a 332px panel."
+  },
+  "clipboard.title": {
+    "text": "CLIPBOARD DETECTED",
+    "maxLength": 30,
+    "note": "Header of the small 326px-wide popup that appears at the bottom of the window whenever the user copies text anywhere in Windows. 7pt bold, ◈ glyph prefix, ✕ close button on the right. Means 'we noticed you copied something'."
+  },
+  "clipboard.translate": {
+    "text": "TRANSLATE",
+    "maxLength": 11,
+    "note": "First of four equal buttons in the clipboard popup — each is only about 74px wide at 7pt bold, so 11 characters is the hard ceiling. Sends the copied text to be translated."
+  },
+  "clipboard.summarise": {
+    "text": "SUMMARISE",
+    "maxLength": 11,
+    "note": "Second clipboard button, same 74px slot. Asks for a short summary of the copied text."
+  },
+  "clipboard.explain": {
+    "text": "EXPLAIN",
+    "maxLength": 11,
+    "note": "Third clipboard button, same 74px slot. Asks the assistant to explain the copied text."
+  },
+  "clipboard.fix": {
+    "text": "FIX",
+    "maxLength": 11,
+    "note": "Fourth clipboard button, same 74px slot. Fixes spelling and grammar in the copied text."
+  },
+  "clipboard.cmd_translate": {
+    "text": "Translate this text to English: {text}",
+    "maxLength": 120,
+    "note": "Not shown as a label — this is the instruction actually sent to the AI when TRANSLATE is pressed, and it is echoed in the activity log. Translate the instruction into the target language AND change 'English' to the language the user will want the result in (for Sorani builds, Sorani). Keep the {text} placeholder at the end."
+  },
+  "clipboard.cmd_summarise": {
+    "text": "Summarise this: {text}",
+    "maxLength": 120,
+    "note": "Instruction sent to the AI when SUMMARISE is pressed; also echoed in the activity log. Keep the {text} placeholder at the end — writing the instruction in the target language is what makes the assistant answer in that language."
+  },
+  "clipboard.cmd_explain": {
+    "text": "Explain this: {text}",
+    "maxLength": 120,
+    "note": "Instruction sent to the AI when EXPLAIN is pressed. Keep the {text} placeholder at the end."
+  },
+  "clipboard.cmd_fix": {
+    "text": "Fix grammar and spelling: {text}",
+    "maxLength": 120,
+    "note": "Instruction sent to the AI when FIX is pressed. Keep the {text} placeholder at the end."
+  },
+  "shortcut.description": {
+    "text": "{name} AI Assistant",
+    "maxLength": 40,
+    "note": "Description embedded in the Windows .lnk desktop shortcut — Windows shows it as a hover tooltip on the desktop icon. {name} is the assistant name and must not be translated."
+  },
+  "viz.title": {
+    "text": "VOICE ANIMATION",
+    "maxLength": 24,
+    "note": "picker heading"
+  },
+  "viz.button": {
+    "text": "VOICE ANIMATION",
+    "maxLength": 26,
+    "note": "drawer button"
+  },
+  "bg.title": {
+    "text": "BACKGROUND",
+    "maxLength": 24,
+    "note": "picker section heading"
+  },
+  "features.title": {
+    "text": "WHAT I CAN DO",
+    "maxLength": 26,
+    "note": "features panel heading"
+  },
+  "features.button": {
+    "text": "WHAT I CAN DO",
+    "maxLength": 26,
+    "note": "drawer button"
+  },
+  "drawer.mini_mode": {
+    "text": "MINI MODE  ·  FLOATING PET",
+    "maxLength": 30,
+    "note": "drawer button"
+  },
+  "lang.changed": {
+    "text": "Language",
+    "maxLength": 16,
+    "note": "log line prefix"
+  },
+  "viz.face": {
+    "text": "Dot Face",
+    "maxLength": 16,
+    "note": "visualizer tile"
+  },
+  "viz.reactor": {
+    "text": "Arc Reactor",
+    "maxLength": 16,
+    "note": "visualizer tile"
+  },
+  "viz.spectrum": {
+    "text": "Spectrum",
+    "maxLength": 16,
+    "note": "visualizer tile"
+  },
+  "viz.bars": {
+    "text": "Equalizer",
+    "maxLength": 16,
+    "note": "visualizer tile"
+  },
+  "viz.wave": {
+    "text": "Waveform",
+    "maxLength": 16,
+    "note": "visualizer tile"
+  },
+  "viz.pulse": {
+    "text": "Pulse Rings",
+    "maxLength": 16,
+    "note": "visualizer tile"
+  },
+  "viz.orb": {
+    "text": "Solid Orb",
+    "maxLength": 16,
+    "note": "visualizer tile"
+  },
+  "bg.ocean": {
+    "text": "Deep Ocean",
+    "maxLength": 16,
+    "note": "background tile"
+  },
+  "bg.nebula": {
+    "text": "Nebula",
+    "maxLength": 16,
+    "note": "background tile"
+  },
+  "bg.horizon": {
+    "text": "Horizon",
+    "maxLength": 16,
+    "note": "background tile"
+  },
+  "bg.aurora": {
+    "text": "Aurora",
+    "maxLength": 16,
+    "note": "background tile"
+  },
+  "bg.carbon": {
+    "text": "Carbon",
+    "maxLength": 16,
+    "note": "background tile"
+  },
+  "bg.void": {
+    "text": "Void",
+    "maxLength": 16,
+    "note": "background tile"
+  },
+  "bg.crimson": {
+    "text": "Crimson",
+    "maxLength": 16,
+    "note": "background tile"
+  },
+  "bg.violet": {
+    "text": "Violet",
+    "maxLength": 16,
+    "note": "background tile"
+  },
+  "bg.matrix": {
+    "text": "Matrix",
+    "maxLength": 16,
+    "note": "background tile"
+  },
+  "bg.amber": {
+    "text": "Amber",
+    "maxLength": 16,
+    "note": "background tile"
+  },
+  "bg.sunset": {
+    "text": "Sunset",
+    "maxLength": 16,
+    "note": "background tile"
+  },
+  "bg.arctic": {
+    "text": "Arctic",
+    "maxLength": 16,
+    "note": "background tile"
+  },
+  "appearance.button": {
+    "text": "APPEARANCE  ·  THEMES",
+    "maxLength": 30,
+    "note": "drawer button opening the appearance panel"
+  },
+  "appearance.title": {
+    "text": "APPEARANCE",
+    "maxLength": 22,
+    "note": "appearance panel heading"
+  },
+  "viz.animation_section": {
+    "text": "VOICE ANIMATION",
+    "maxLength": 24,
+    "note": "section heading inside appearance panel"
+  }
+}

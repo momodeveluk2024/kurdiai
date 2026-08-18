@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark-L One-Click Installation Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .step {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .step-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .step-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+            display: inline-block;
+        }
+
+        .step-content {
+            margin-top: 15px;
+            padding-left: 50px;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .warning strong {
+            color: #856404;
+        }
+
+        .info {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #764ba2;
+        }
+
+        .files-section {
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .files-section h3 {
+            margin-bottom: 10px;
+            color: #495057;
+        }
+
+        .file-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .file-list li {
+            padding: 10px;
+            margin: 5px 0;
+            background: white;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .file-list li::before {
+            content: "📄";
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .feature-card strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .footer {
+            background: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #adb5bd;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Mark-L One-Click Installer</h1>
+            <p>Your Personal AI Assistant - Simple Setup in Minutes</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>🚀 What is Mark-L?</h2>
+                <p>Mark-L is a <strong>personal AI assistant</strong> that can:</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <strong>🎤 Voice Control</strong>
+                        Real-time voice conversation in multiple languages
+                    </div>
+                    <div class="feature-card">
+                        <strong>💻 System Control</strong>
+                        Launch apps, manage windows, adjust settings by voice
+                    </div>
+                    <div class="feature-card">
+                        <strong>👁️ Visual Awareness</strong>
+                        See and understand your screen
+                    </div>
+                    <div class="feature-card">
+                        <strong>🧠 Persistent Memory</strong>
+                        Remembers conversations across sessions
+                    </div>
+                    <div class="feature-card">
+                        <strong>🔍 Web Search</strong>
+                        Search the internet and get real-time information
+                    </div>
+                    <div class="feature-card">
+                        <strong>📊 System Monitoring</strong>
+                        Track CPU, RAM, GPU, and temperature
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📋 What You'll Need</h2>
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Gemini API Key (FREE)</div>
+                    <div class="step-content">
+                        <p>Before installing, get your free API key:</p>
+                        <ol>
+                            <li>Go to <a href="https://makersuite.google.com/app/apikey" target="_blank">https://makersuite.google.com/app/apikey</a></li>
+                            <li>Sign in with your Google account</li>
+                            <li>Click "Create API Key"</li>
+                            <li>Copy your API key (save it!)</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Python 3.11 or 3.12</div>
+                    <div class="step-content">
+                        <p>If you don't have Python installed:</p>
+                        <ol>
+                            <li>Download from <a href="https://www.python.org/downloads/" target="_blank">python.org</a></li>
+                            <li>Run the installer</li>
+                            <li><strong>IMPORTANT:</strong> Check "Add Python to PATH"</li>
+                            <li>Click "Install Now"</li>
+                        </ol>
+                        <div class="warning">
+                            <strong>⚠️ Important:</strong> If you don't check "Add Python to PATH", the installer won't work!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Working Microphone</div>
+                    <div class="step-content">
+                        <p>Ensure your microphone is connected and set as the default recording device in Windows Sound Settings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>⚡ Quick Installation</h2>
+                <div class="info">
+                    <strong>📁 Installation Files:</strong>
+                    <ul class="file-list">
+                        <li>INSTALL_AND_RUN.bat - Complete installer (run this first!)</li>
+                        <li>RUN_MARK_L.bat - Quick launcher (use after installation)</li>
+                        <li>Create_Desktop_Shortcut.bat - Add shortcut to desktop</li>
+                        <li>SETUP_GUIDE.txt - Detailed text guide</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Run the Installer</div>
+                    <div class="step-content">
+                        <p>Double-click <code>INSTALL_AND_RUN.bat</code></p>
+                        <div class="warning">
+                            <strong>⚠️ Windows may show a warning:</strong> This is normal! Click "Run" or "Yes" to continue.
+                        </div>
+                        <p>The installer will automatically:</p>
+                        <ul>
+                            <li>Download Mark-L</li>
+                            <li>Install all required dependencies</li>
+                            <li>Set up configuration</li>
+                            <li>Prompt for your API key</li>
+                            <li>Launch Mark-L</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Enter Your API Key</div>
+                    <div class="step-content">
+                        <p>When prompted, paste your Gemini API key and press Enter.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Wait for Installation</div>
+                    <div class="step-content">
+                        <p>This may take 5-10 minutes. You'll see progress messages as it installs dependencies.</p>
+                    </div>
+                </div>
+
+                <div class="success">
+                    <strong>✅ Installation Complete!</strong>
+                    <p>Mark-L will start automatically. Try speaking to it!</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🎯 Using Mark-L</h2>
+                <div class="step">
+                    <div class="step-title">First Run</div>
+                    <div class="step-content">
+                        <p>After installation, Mark-L will start automatically. A setup wizard will help you configure basic settings.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Future Runs</div>
+                    <div class="step-content">
+                        <p>To run Mark-L again, simply double-click:</p>
+                        <ul>
+                            <li><code>RUN_MARK_L.bat</code> in the Mark-L folder, OR</li>
+                            <li>The Mark-L shortcut on your desktop (if you created one)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-title">Example Commands</div>
+                    <div class="step-content">
+                        <p>Try these voice commands:</p>
+                        <ul>
+                            <li><strong>"Open notepad"</strong> - Launch applications</li>
+                            <li><strong>"What time is it?"</strong> - Get information</li>
+                            <li><strong>"Search for Python tutorials"</strong> - Web search</li>
+                            <li><strong>"Check CPU temperature"</strong> - System monitoring</li>
+                            <li><strong>"Remind me to call Mom at 5pm"</strong> - Set reminders</li>
+                            <li><strong>"Read what's on my screen"</strong> - Screen awareness</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔧 Optional Enhancements</h2>
+                <div class="step">
+                    <div class="step-title">Create Desktop Shortcut</div>
+                    <div class="step-content">
+                        <p>Run <code>Create_Desktop_Shortcut.bat</code> to add a Mark-L icon to your desktop for easy access.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>❓ Troubleshooting</h2>
+                <div class="warning">
+                    <strong>Problem:</strong> "Python is not recognized"<br>
+                    <strong>Solution:</strong> Reinstall Python and check "Add Python to PATH"
+                </div>
+
+                <div class="warning">
+                    <strong>Problem:</strong> "No module named 'xxx'"<br>
+                    <strong>Solution:</strong> Run INSTALL_AND_RUN.bat again
+                </div>
+
+                <div class="warning">
+                    <strong>Problem:</strong> Microphone not working<br>
+                    <strong>Solution:</strong> Check microphone settings in Windows → ensure it's set as default
+                </div>
+
+                <div class="warning">
+                    <strong>Problem:</strong> Mark-L won't start<br>
+                    <strong>Solution:</strong> Ensure api_keys.json exists in the config folder, try re-running installer
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📞 Support</h2>
+                <p>For issues, feature requests, or updates:</p>
+                <p>
+                    <a href="https://github.com/FatihMakes/Mark-L" target="_blank" class="button">Visit GitHub Repository</a>
+                    <a href="https://github.com/FatihMakes/Mark-L/issues" target="_blank" class="button">Report Issues</a>
+                </p>
+                <div class="info">
+                    <strong>License:</strong> Personal and non-commercial use only (Creative Commons BY-NC 4.0)
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Mark-L One-Click Installer • Created for easy, non-technical installation</p>
+            <p><a href="https://github.com/FatihMakes/Mark-L">Original Project by FatihMakes</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+═══════════════════════════════════════════════════════════
+                 MARK-L ONE-CLICK INSTALLER
+                 For Non-Technical Users
+═══════════════════════════════════════════════════════════
+
+BEFORE YOU START - PREPARATION:
+───────────────────────────────────────────────────────────
+
+1. GET A FREE GEMINI API KEY (Required)
+
+   • Open your web browser
+   • Go to: https://makersuite.google.com/app/apikey
+   • Sign in with your Google account (or create one - it's free)
+   • Click the blue "Create API Key" button
+   • Copy the API key that appears (it looks like: ABcdEF123456...)
+   • Save it somewhere safe - you'll need it during installation
+
+
+INSTALLATION - 3 SIMPLE STEPS:
+───────────────────────────────────────────────────────────
+
+STEP 1: INSTALL PYTHON (if not already installed)
+
+   • Go to: https://www.python.org/downloads/
+   • Download Python 3.11 or 3.12 (recommended)
+   • Run the installer
+   • ⚠️ VERY IMPORTANT: Check the box "Add Python to PATH"
+   • Click "Install Now"
+   • Wait for installation to complete
+
+
+STEP 2: RUN THE ONE-CLICK INSTALLER
+
+   • Double-click the file: INSTALL_AND_RUN.bat
+   • A black window will appear - this is normal!
+   • Follow the on-screen instructions
+   • When prompted, paste your Gemini API key
+   • Press any key when asked
+   • Wait for everything to install (this may take 5-10 minutes)
+
+
+STEP 3: START USING MARK-L
+
+   • After installation, Mark-L will start automatically
+   • Speak clearly into your microphone
+   • Try commands like:
+     - "Open Chrome"
+     - "What time is it?"
+     - "Check my CPU temperature"
+     - "Search the web for latest tech news"
+
+
+TO RUN MARK-L AGAIN (After First Installation):
+───────────────────────────────────────────────────────────
+
+Simply double-click: RUN_MARK_L.bat
+
+
+TROUBLESHOOTING:
+───────────────────────────────────────────────────────────
+
+PROBLEM: "Python is not recognized"
+SOLUTION: Python was not added to PATH during installation
+         • Reinstall Python and check "Add Python to PATH"
+
+PROBLEM: "No module named 'xxx'"
+SOLUTION: Run the installer again, or open command prompt in the
+         Mark-L folder and run: pip install -r requirements.txt
+
+PROBLEM: Microphone not working
+SOLUTION:
+         • Check your microphone is connected
+         • Go to Windows Sound Settings → ensure mic is default
+         • Test mic with Windows Voice Recorder
+
+PROBLEM: Mark-L won't start
+SOLUTION:
+         • Make sure you're in the Mark-L folder
+         • Check that api_keys.json exists in the config folder
+         • Try running INSTALL_AND_RUN.bat again
+
+
+FEATURES YOU CAN TRY:
+───────────────────────────────────────────────────────────
+
+• System Control:
+  - "Open notepad"
+  - "Launch Spotify"
+  - "Close Chrome"
+  - "Adjust volume to 50%"
+
+• Web Search:
+  - "Search for Python tutorials"
+  - "What's the weather tomorrow?"
+  - "Latest news about AI"
+
+• Information:
+  - "What time is it?"
+  - "What's my CPU usage?"
+  - "Check GPU temperature"
+
+• Reminders (Memory):
+  - "Remind me to call Mom at 5pm"
+  - "Remember: I have a meeting at 2pm"
+
+• Screen Interaction:
+  - "Read what's on my screen"
+  - "Take a screenshot"
+
+
+IMPORTANT NOTES:
+───────────────────────────────────────────────────────────
+
+• Mark-L requires an internet connection for most features
+• Your microphone must be working before starting
+• The first run may take longer to initialize
+• All conversations are saved in the memory folder
+• This is for personal/non-commercial use only
+
+
+SUPPORT:
+───────────────────────────────────────────────────────────
+
+For issues and updates:
+https://github.com/FatihMakes/Mark-L
+
+For more detailed documentation, see the original README
+
+
+═══════════════════════════════════════════════════════════
+                    ENJOY USING MARK-L!
+═══════════════════════════════════════════════════════════

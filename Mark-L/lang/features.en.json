@@ -1,0 +1,454 @@
+{
+  "_meta": {
+    "language": "en",
+    "direction": "ltr"
+  },
+  "groups": [
+    {
+      "id": "voice",
+      "icon": "🎙",
+      "name": "Voice & Conversation",
+      "summary": "Talk to it naturally in any language.",
+      "features": [
+        {
+          "id": "voice.multilingual",
+          "name": "Speaks your language",
+          "desc": "Understands and replies in Kurdish, Arabic, English, Turkish and more — it switches by itself.",
+          "example": "Try: \"Can you speak Kurdish?\""
+        },
+        {
+          "id": "voice.natural",
+          "name": "No commands to memorise",
+          "desc": "Say what you want the way you would say it to a person, and it works the rest out.",
+          "example": "Try: \"I'm bored, find me something to watch\""
+        },
+        {
+          "id": "voice.typed",
+          "name": "Type instead of talking",
+          "desc": "Prefer to stay quiet? Type the very same requests into the command box at the bottom.",
+          "example": "Type: \"what is my CPU temperature\""
+        },
+        {
+          "id": "voice.briefing",
+          "name": "Morning briefing",
+          "desc": "Greets you when it starts with the day's headlines and whatever you asked it to follow.",
+          "example": "Switch MORNING BRIEF on in the Controls panel."
+        },
+        {
+          "id": "voice.proactive",
+          "name": "Speaks up on its own",
+          "desc": "After a long quiet spell it starts a useful, well-timed thought instead of waiting.",
+          "example": "Happens by itself after about 15 minutes of silence."
+        },
+        {
+          "id": "voice.goodbye",
+          "name": "Closes when you say bye",
+          "desc": "Say goodbye in any language and it ends the session and shuts itself down politely.",
+          "example": "Try: \"that's all for today, goodbye\""
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "icon": "🖥",
+      "name": "Computer Control",
+      "summary": "Runs your computer for you, hands free.",
+      "features": [
+        {
+          "id": "control.open_app",
+          "name": "Opens any app",
+          "desc": "Starts any program or website on your computer just from its name.",
+          "example": "Try: \"open Spotify\""
+        },
+        {
+          "id": "control.volume",
+          "name": "Volume and brightness",
+          "desc": "Turns the sound or the screen brightness up and down, or mutes everything at once.",
+          "example": "Try: \"set the volume to 30\""
+        },
+        {
+          "id": "control.windows",
+          "name": "Windows and tabs",
+          "desc": "Closes, minimises, snaps and swaps windows and browser tabs without you touching the mouse.",
+          "example": "Try: \"snap this window to the left\""
+        },
+        {
+          "id": "control.power",
+          "name": "Lock, restart, shut down",
+          "desc": "Locks the screen or powers the whole machine down when you ask it to.",
+          "example": "Try: \"lock the screen\""
+        },
+        {
+          "id": "control.wifi",
+          "name": "WiFi and dark mode",
+          "desc": "Switches WiFi off and back on, or flips the whole system into dark mode.",
+          "example": "Try: \"turn on dark mode\"",
+          "requires": "Windows only"
+        },
+        {
+          "id": "control.typing",
+          "name": "Types and clicks for you",
+          "desc": "Types text, presses keyboard shortcuts, clicks and scrolls anywhere on the screen.",
+          "example": "Try: \"type my email address here\""
+        },
+        {
+          "id": "control.screen_click",
+          "name": "Finds buttons on screen",
+          "desc": "Looks at the screen, spots the button you described and clicks it for you.",
+          "example": "Try: \"click the blue Sign In button\""
+        },
+        {
+          "id": "control.wallpaper",
+          "name": "Changes your wallpaper",
+          "desc": "Sets a new desktop background from a picture on your computer or from a link.",
+          "example": "Try: \"set my wallpaper to the sunset photo on my desktop\""
+        }
+      ]
+    },
+    {
+      "id": "files",
+      "icon": "📁",
+      "name": "Files & Documents",
+      "summary": "Finds, tidies and reads anything you keep.",
+      "features": [
+        {
+          "id": "files.find",
+          "name": "Finds any file",
+          "desc": "Tracks down a file by its name or its type anywhere on your computer in seconds.",
+          "example": "Try: \"find all my PDF files\""
+        },
+        {
+          "id": "files.manage",
+          "name": "Creates, moves, deletes",
+          "desc": "Makes folders, renames, copies and moves things, and bins files safely so you can undo it.",
+          "example": "Try: \"make a folder called Invoices on my desktop\""
+        },
+        {
+          "id": "files.space",
+          "name": "Frees up disk space",
+          "desc": "Shows how full your drives are and names the biggest files eating your space.",
+          "example": "Try: \"what are the biggest files in my downloads?\""
+        },
+        {
+          "id": "files.organize",
+          "name": "Tidies your desktop",
+          "desc": "Sorts a cluttered desktop into neat folders, either by file type or by date.",
+          "example": "Try: \"organise my desktop by file type\""
+        },
+        {
+          "id": "files.drop",
+          "name": "Drop a file, ask anything",
+          "desc": "Drag any file onto the window, then simply ask a question about it out loud.",
+          "example": "Drop a file, then say: \"what is this?\""
+        },
+        {
+          "id": "files.documents",
+          "name": "Reads PDFs and documents",
+          "desc": "Summarises a PDF or Word file, lifts the text out of it, or turns a PDF into Word.",
+          "example": "Try: \"summarise this PDF\""
+        },
+        {
+          "id": "files.sheets",
+          "name": "Understands spreadsheets",
+          "desc": "Reads a CSV or Excel file, explains the numbers, and filters or sorts the rows for you.",
+          "example": "Try: \"analyse this spreadsheet\""
+        },
+        {
+          "id": "files.images",
+          "name": "Works on your pictures",
+          "desc": "Describes a photo, reads the writing inside it, or resizes, shrinks and converts it.",
+          "example": "Try: \"read the text in this image\""
+        },
+        {
+          "id": "files.media",
+          "name": "Audio and video jobs",
+          "desc": "Writes out what was said in a recording, trims clips, and changes file formats.",
+          "example": "Try: \"transcribe this audio file\"",
+          "requires": "Trimming and converting video needs ffmpeg installed"
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "icon": "🌐",
+      "name": "Web & Search",
+      "summary": "Looks things up so you never have to guess.",
+      "features": [
+        {
+          "id": "web.search",
+          "name": "Answers real questions",
+          "desc": "Searches the live web, so what it tells you is current instead of remembered.",
+          "example": "Try: \"search for the best laptops this year\""
+        },
+        {
+          "id": "web.news",
+          "name": "Latest news on a topic",
+          "desc": "Brings back today's headlines on whatever subject you care about.",
+          "example": "Try: \"what's the latest news about Kurdistan?\""
+        },
+        {
+          "id": "web.price",
+          "name": "Prices and comparisons",
+          "desc": "Checks what something costs, or puts two products side by side so you can choose.",
+          "example": "Try: \"compare the iPhone 17 and the Galaxy S26 on price\""
+        },
+        {
+          "id": "web.research",
+          "name": "Deep research",
+          "desc": "Digs properly into a subject and comes back with a full answer, not a one-liner.",
+          "example": "Try: \"do deep research on solar panels for my home\""
+        },
+        {
+          "id": "web.browser",
+          "name": "Opens sites for you",
+          "desc": "Opens any site or search in your own browser, with your accounts already signed in.",
+          "example": "Try: \"open YouTube in Edge\""
+        },
+        {
+          "id": "web.browser_auto",
+          "name": "Clicks and fills forms",
+          "desc": "Moves through a website for you, clicking buttons and filling in the boxes itself.",
+          "example": "Try: \"go to the contact page and fill in the form\"",
+          "requires": "Needs Playwright browser automation installed"
+        },
+        {
+          "id": "web.weather",
+          "name": "Weather anywhere",
+          "desc": "Tells you the weather for any city you name, at home or abroad.",
+          "example": "Try: \"what's the weather in Hewler?\""
+        },
+        {
+          "id": "web.flights",
+          "name": "Finds cheap flights",
+          "desc": "Searches flights for your dates and reads the best options out to you.",
+          "example": "Try: \"find flights from Erbil to Istanbul on 12 September\""
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "icon": "👁",
+      "name": "Vision",
+      "summary": "It can look at your screen and through your camera.",
+      "features": [
+        {
+          "id": "vision.screen",
+          "name": "Sees your screen",
+          "desc": "Looks at whatever is on your screen right now and answers questions about it.",
+          "example": "Try: \"what is on my screen?\""
+        },
+        {
+          "id": "vision.camera",
+          "name": "Sees through the camera",
+          "desc": "Opens your webcam, looks through it and describes what is in front of you.",
+          "example": "Try: \"look at the camera and tell me what you see\""
+        },
+        {
+          "id": "vision.camera_off",
+          "name": "Closes the camera",
+          "desc": "Shuts the live camera view the moment you ask, in any language.",
+          "example": "Try: \"close the camera\""
+        },
+        {
+          "id": "vision.screenshot",
+          "name": "Takes screenshots",
+          "desc": "Captures the screen and saves the picture where you can find it again.",
+          "example": "Try: \"take a screenshot\""
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "icon": "🎬",
+      "name": "Media & Entertainment",
+      "summary": "Videos, music and your games library.",
+      "features": [
+        {
+          "id": "media.youtube_play",
+          "name": "Plays YouTube videos",
+          "desc": "Finds a video from your description and starts playing it straight away.",
+          "example": "Try: \"play Kurdish music on YouTube\""
+        },
+        {
+          "id": "media.youtube_summary",
+          "name": "Summarises long videos",
+          "desc": "Sits through an hour-long video for you and hands back the short version.",
+          "example": "Try: \"summarise this YouTube video\""
+        },
+        {
+          "id": "media.trending",
+          "name": "What everyone is watching",
+          "desc": "Shows the videos trending right now in any country you name.",
+          "example": "Try: \"show me trending videos in Iraq\""
+        },
+        {
+          "id": "media.games",
+          "name": "Updates your games",
+          "desc": "Installs and updates your Steam and Epic games and tells you how the download is going.",
+          "example": "Try: \"update all my Steam games\"",
+          "requires": "Steam or Epic Games must be installed"
+        },
+        {
+          "id": "media.games_night",
+          "name": "Downloads games overnight",
+          "desc": "Runs game updates in the small hours and can switch the PC off when they finish.",
+          "example": "Try: \"update my games every night at 3am\"",
+          "requires": "Steam or Epic Games must be installed"
+        }
+      ]
+    },
+    {
+      "id": "dev",
+      "icon": "⌨",
+      "name": "Development",
+      "summary": "Writes, fixes and builds software with you.",
+      "features": [
+        {
+          "id": "dev.write",
+          "name": "Writes code for you",
+          "desc": "Turns a plain description into a working program and saves it where you want it.",
+          "example": "Try: \"write a Python script that renames my photos by date\""
+        },
+        {
+          "id": "dev.explain",
+          "name": "Explains and fixes code",
+          "desc": "Opens a file you already have, tells you what it does and repairs what is broken.",
+          "example": "Try: \"explain what this file does\""
+        },
+        {
+          "id": "dev.run",
+          "name": "Runs it and fixes errors",
+          "desc": "Runs your program, reads the errors that come back and corrects them itself.",
+          "example": "Try: \"run this script and fix any errors\""
+        },
+        {
+          "id": "dev.project",
+          "name": "Builds whole projects",
+          "desc": "Plans a full multi-file project, writes it, installs what it needs and gets it running.",
+          "example": "Try: \"build me a to-do list app in Python\""
+        },
+        {
+          "id": "dev.review",
+          "name": "Reviews your code files",
+          "desc": "Drop in a code file and it will review it, comment it, tidy it or write tests for it.",
+          "example": "Drop a code file, then say: \"review this code\""
+        }
+      ]
+    },
+    {
+      "id": "phone",
+      "icon": "📱",
+      "name": "Phone & Remote",
+      "summary": "Use it from your phone, anywhere in the house.",
+      "features": [
+        {
+          "id": "phone.pair",
+          "name": "Control it from your phone",
+          "desc": "Scan one QR code and your phone becomes a remote control for the whole assistant.",
+          "example": "Press REMOTE CONTROL in the Controls panel."
+        },
+        {
+          "id": "phone.voice",
+          "name": "Talk to it from your phone",
+          "desc": "Speak into your phone and it answers on the computer as if you were sitting there.",
+          "example": "On your phone, say: \"what is on my screen?\""
+        },
+        {
+          "id": "phone.files",
+          "name": "Send files from your phone",
+          "desc": "Send a photo or a document up from your phone and ask about it right away.",
+          "example": "On your phone, send a photo, then ask: \"what is this?\""
+        },
+        {
+          "id": "phone.secure",
+          "name": "Private and encrypted",
+          "desc": "The phone link is PIN-locked, encrypted, and stays inside your own home network.",
+          "example": "Press REVOKE DEVICES to unpair every phone at once."
+        },
+        {
+          "id": "phone.message",
+          "name": "Sends messages for you",
+          "desc": "Sends a WhatsApp, Telegram, Instagram, Signal, Discord or Messenger message by voice.",
+          "example": "Try: \"send a WhatsApp to Dara saying I'll be late\"",
+          "requires": "The messaging app must be installed and signed in"
+        }
+      ]
+    },
+    {
+      "id": "system",
+      "icon": "📊",
+      "name": "System & Monitoring",
+      "summary": "Keeps an eye on your machine and your reminders.",
+      "features": [
+        {
+          "id": "system.status",
+          "name": "Live health of your PC",
+          "desc": "Reports processor, memory, GPU, temperature, uptime and how much is running.",
+          "example": "Try: \"how is my computer doing?\""
+        },
+        {
+          "id": "system.hud",
+          "name": "Always-on meters",
+          "desc": "The bars down the left edge show CPU, memory, network, GPU and heat at a glance.",
+          "example": "Always on screen — nothing to ask for."
+        },
+        {
+          "id": "system.alerts",
+          "name": "Warns you before trouble",
+          "desc": "Speaks up by itself when the machine runs too hot or memory gets dangerously low.",
+          "example": "Happens by itself — nothing to switch on."
+        },
+        {
+          "id": "system.reminders",
+          "name": "Reminds you on time",
+          "desc": "Sets a reminder that pops up and speaks at exactly the day and time you named.",
+          "example": "Try: \"remind me tomorrow at 9am to call the bank\""
+        },
+        {
+          "id": "system.topics",
+          "name": "Follows topics for you",
+          "desc": "Watches a subject quietly in the background and tells you when something new happens.",
+          "example": "Try: \"monitor news about electric cars\""
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "icon": "🧠",
+      "name": "Memory & Personal",
+      "summary": "It learns who you are and stays yours.",
+      "features": [
+        {
+          "id": "memory.remembers",
+          "name": "Remembers you",
+          "desc": "Quietly holds on to your name, city, work, tastes and plans so you never repeat yourself.",
+          "example": "Try: \"my favourite food is dolma\""
+        },
+        {
+          "id": "memory.recall",
+          "name": "Carries on from last time",
+          "desc": "Keeps the thread of your last conversation, so today starts where yesterday stopped.",
+          "example": "Try: \"what do you remember about me?\""
+        },
+        {
+          "id": "memory.forget",
+          "name": "Everything stays on your PC",
+          "desc": "What it remembers about you is kept in a file on your own computer, not in the cloud.",
+          "example": "Try: \"what do you know about my family?\""
+        },
+        {
+          "id": "memory.name",
+          "name": "Give it your own name",
+          "desc": "Rename the assistant and tell it what to call you, so it greets you the way you like.",
+          "example": "Press CUSTOMISE ASSISTANT in the Controls panel."
+        },
+        {
+          "id": "memory.shortcut",
+          "name": "One-click desktop launch",
+          "desc": "Puts a shortcut on your desktop so the assistant starts with a single double-click.",
+          "example": "Press CREATE DESKTOP SHORTCUT in the Controls panel."
+        }
+      ]
+    }
+  ]
+}

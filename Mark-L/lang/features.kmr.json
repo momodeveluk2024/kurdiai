@@ -1,0 +1,454 @@
+{
+  "_meta": {
+    "language": "kmr",
+    "direction": "ltr"
+  },
+  "groups": [
+    {
+      "id": "voice",
+      "icon": "🎙",
+      "name": "Deng û Axaftin",
+      "summary": "Bi her zimanî, bi awayekî xwezayî pê re biaxive.",
+      "features": [
+        {
+          "id": "voice.multilingual",
+          "name": "Bi zimanê te diaxive",
+          "desc": "Bi kurdî, erebî, îngilîzî, tirkî û zimanên din fêm dike û bersiv dide — bi xwe zimên diguhere.",
+          "example": "Bêje: \"tu dikarî bi kurdî biaxivî?\""
+        },
+        {
+          "id": "voice.natural",
+          "name": "Bêyî fermanên taybet",
+          "desc": "Wek ku ji mirovekî re bibêjî, tu çi dixwazî bêje — ya mayî ew bi xwe fêm dike.",
+          "example": "Bêje: \"ez aciz bûme, fîlmekî baş ji min re bibîne\""
+        },
+        {
+          "id": "voice.typed",
+          "name": "Li şûna axaftinê binivîse",
+          "desc": "Dixwazî bêdeng bimînî? Heman daxwazan di qutiya fermanê ya jêrîn de binivîse.",
+          "example": "Binivîse: \"germahiya CPU ya min çend e\""
+        },
+        {
+          "id": "voice.briefing",
+          "name": "Rapora sibehê",
+          "desc": "Dema vedibe silavê li te dike, sernivîsên rojê û mijarên te dane şopandin radigihîne.",
+          "example": "Di panela CONTROLS de MORNING BRIEF veke."
+        },
+        {
+          "id": "voice.proactive",
+          "name": "Bi xwe dest bi axaftinê dike",
+          "desc": "Piştî bêdengiyeke dirêj, li şûna ku bisekine, bi xwe mijareke kêrhatî tîne ziman.",
+          "example": "Bi xwe çêdibe, piştî nêzîkî 15 deqîqe bêdengî."
+        },
+        {
+          "id": "voice.goodbye",
+          "name": "Bi xatirê te tê girtin",
+          "desc": "Bi her zimanî xatirê xwe bixwaze; danişînê diqedîne û bi rêzdarî xwe digire.",
+          "example": "Bêje: \"ji bo îro bes e, bi xatirê te\""
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "icon": "🖥",
+      "name": "Kontrola Kompîterê",
+      "summary": "Bêyî destan kompîtera te ji te re dimeşîne.",
+      "features": [
+        {
+          "id": "control.open_app",
+          "name": "Her sepanê vedike",
+          "desc": "Bi tenê navê wê bes e: her bernameyek an malperek li ser kompîtera te vedike.",
+          "example": "Bêje: \"Spotify veke\""
+        },
+        {
+          "id": "control.volume",
+          "name": "Deng û ronahî",
+          "desc": "Dengî an ronahiya ekranê bilind û nizm dike, an jî bi carekê her tiştî bêdeng dike.",
+          "example": "Bêje: \"dengî bike 30\""
+        },
+        {
+          "id": "control.windows",
+          "name": "Pace û tabên gerokê",
+          "desc": "Bêyî ku destî li mişkê bidî paceyan û tabên gerokê digire, kêm dike û bi cih dike.",
+          "example": "Bêje: \"vê paceyê bibe aliyê çepê\""
+        },
+        {
+          "id": "control.power",
+          "name": "Kilîtkirin û girtin",
+          "desc": "Gava tu bixwazî ekranê kilît dike, ji nû ve dide destpêkirin an kompîterê ditemirîne.",
+          "example": "Bêje: \"ekranê kilît bike\""
+        },
+        {
+          "id": "control.wifi",
+          "name": "WiFi û moda tarî",
+          "desc": "WiFiyê digire û ji nû ve vedike, an jî tevahiya pergalê dibe moda tarî.",
+          "example": "Bêje: \"moda tarî veke\"",
+          "requires": "Tenê Windows"
+        },
+        {
+          "id": "control.typing",
+          "name": "Dinivîse û klîk dike",
+          "desc": "Nivîsê dinivîse, kurterêyên klavyeyê bi kar tîne, li her derê ekranê klîk dike û dişemitîne.",
+          "example": "Bêje: \"navnîşana min a e-nameyê li vir binivîse\""
+        },
+        {
+          "id": "control.screen_click",
+          "name": "Bişkokan li ekranê dibîne",
+          "desc": "Li ekranê dinêre, bişkoka ku te bi nav kir dibîne û ji te re pêl wê dike.",
+          "example": "Bêje: \"pêl bişkoka şîn a Sign In bike\""
+        },
+        {
+          "id": "control.wallpaper",
+          "name": "Paşxanê diguherîne",
+          "desc": "Ji wêneyekî li ser kompîtera te an ji girêdanekê paşxaneke nû ya sermaseyê datîne.",
+          "example": "Bêje: \"wêneyê rojavabûnê yê li sermaseyê bike paşxan\""
+        }
+      ]
+    },
+    {
+      "id": "files",
+      "icon": "📁",
+      "name": "Pel û Belge",
+      "summary": "Her tiştê tu diparêzî dibîne, rêk dixe û dixwîne.",
+      "features": [
+        {
+          "id": "files.find",
+          "name": "Her pelî dibîne",
+          "desc": "Pelekî bi navê an bi cureyê wî di çend çirkeyan de li her derê kompîterê dibîne.",
+          "example": "Bêje: \"hemû pelên min ên PDF bibîne\""
+        },
+        {
+          "id": "files.manage",
+          "name": "Çêdike, dibe, jê dibe",
+          "desc": "Peldankan çêdike, nav diguherîne, kopî û veguhestinê dike, pelan bi ewlehî davêje çopê.",
+          "example": "Bêje: \"li sermaseyê peldankeke bi navê Fatûre çêke\""
+        },
+        {
+          "id": "files.space",
+          "name": "Cihê dîskê vala dike",
+          "desc": "Nîşan dide dîskên te çiqas tijî ne û pelên herî mezin ên cih dixwin bi nav dike.",
+          "example": "Bêje: \"di daxistinan de pelên herî mezin kîjan in?\""
+        },
+        {
+          "id": "files.organize",
+          "name": "Sermaseya te rêk dixe",
+          "desc": "Sermaseyeke tevlihev li gorî cureyê pelan an li gorî dîrokê dike peldankên rêkûpêk.",
+          "example": "Bêje: \"sermaseya min li gorî cureyê pelan rêk bixe\""
+        },
+        {
+          "id": "files.drop",
+          "name": "Pelekî bavêje, bipirse",
+          "desc": "Her pelî kaş bike ser paceyê, paşê bi tenê bi dengê xwe pirsekê li ser wê bike.",
+          "example": "Pelekî bavêje, paşê bêje: \"ev çi ye?\""
+        },
+        {
+          "id": "files.documents",
+          "name": "PDF û belgeyan dixwîne",
+          "desc": "Pelekî PDF an Word kurt dike, nivîsa nav wê derdixe, an PDFê dike Word.",
+          "example": "Bêje: \"vê PDFê kurt bike\""
+        },
+        {
+          "id": "files.sheets",
+          "name": "Ji pelên Excelê fêm dike",
+          "desc": "Pelekî CSV an Excel dixwîne, hejmaran rave dike û rêzan ji te re fîltre an rêz dike.",
+          "example": "Bêje: \"vê tabloya Excelê analîz bike\""
+        },
+        {
+          "id": "files.images",
+          "name": "Li ser wêneyên te dixebite",
+          "desc": "Wêneyekî rave dike, nivîsa nav wê dixwîne, an mezinahî û formata wê diguherîne.",
+          "example": "Bêje: \"nivîsa nav vî wêneyî bixwîne\""
+        },
+        {
+          "id": "files.media",
+          "name": "Karên deng û vîdyoyê",
+          "desc": "Tiştê di tomarekê de hatiye gotin dinivîse, klîpan kurt dike û formatan diguherîne.",
+          "example": "Bêje: \"vê tomara dengî binivîsîne\"",
+          "requires": "Ji bo birîn û veguhertina vîdyoyê divê ffmpeg saz be"
+        }
+      ]
+    },
+    {
+      "id": "web",
+      "icon": "🌐",
+      "name": "Înternet û Lêgerîn",
+      "summary": "Ji te re lê digere, êdî ne hewce ye tu texmîn bikî.",
+      "features": [
+        {
+          "id": "web.search",
+          "name": "Bersiva pirsên rastîn",
+          "desc": "Li înternetê ya zindî digere, loma agahiya ku dide ya îro ye, ne ya ji bîra wê.",
+          "example": "Bêje: \"li laptopên herî baş ên vê salê bigere\""
+        },
+        {
+          "id": "web.news",
+          "name": "Nûçeyên dawî yên mijarê",
+          "desc": "Li ser her mijara ku bala te dikişîne sernivîsên îro tîne ber te.",
+          "example": "Bêje: \"nûçeyên dawî yên Kurdistanê çi ne?\""
+        },
+        {
+          "id": "web.price",
+          "name": "Biha û berawirdkirin",
+          "desc": "Lê dinêre tiştek bi çiqasî ye, an du berheman li kêleka hev datîne da ku tu hilbijêrî.",
+          "example": "Bêje: \"bihayê iPhone 17 û Galaxy S26 bide ber hev\""
+        },
+        {
+          "id": "web.research",
+          "name": "Lêkolîna kûr",
+          "desc": "Bi rastî dikeve nav mijarê û bi bersiveke temam vedigere, ne bi rêzikekê.",
+          "example": "Bêje: \"li ser panelên rojê yên ji bo malê lêkolîneke kûr bike\""
+        },
+        {
+          "id": "web.browser",
+          "name": "Malperan ji te re vedike",
+          "desc": "Her malper an lêgerînê di geroka te de vedike, bi hesabên te yên jixwe têketî.",
+          "example": "Bêje: \"YouTube di Edge de veke\""
+        },
+        {
+          "id": "web.browser_auto",
+          "name": "Klîk dike û forman tijî dike",
+          "desc": "Ji te re di nav malperekê de digere, pêl bişkokan dike û qutiyan bi xwe tijî dike.",
+          "example": "Bêje: \"here rûpela têkiliyê û formê tijî bike\"",
+          "requires": "Pêwîstî bi sazkirina Playwright heye"
+        },
+        {
+          "id": "web.weather",
+          "name": "Hewa li her derê",
+          "desc": "Ji bo her bajarê ku tu bi nav bikî, li welêt an li derveyî welêt, hewayê dibêje.",
+          "example": "Bêje: \"hewa li Hewlêrê çawa ye?\""
+        },
+        {
+          "id": "web.flights",
+          "name": "Firînên erzan dibîne",
+          "desc": "Li gorî dîrokên te li firînan digere û vebijarkên herî baş ji te re dixwîne.",
+          "example": "Bêje: \"ji Hewlêrê bo Stenbolê ji bo 12ê îlonê firînan bibîne\""
+        }
+      ]
+    },
+    {
+      "id": "vision",
+      "icon": "👁",
+      "name": "Dîtin",
+      "summary": "Dikare li ekrana te binêre û bi kamerayê bibîne.",
+      "features": [
+        {
+          "id": "vision.screen",
+          "name": "Ekrana te dibîne",
+          "desc": "Li tiştê ku niha li ser ekrana te ye dinêre û pirsên li ser wê bersiv dide.",
+          "example": "Bêje: \"li ser ekrana min çi heye?\""
+        },
+        {
+          "id": "vision.camera",
+          "name": "Bi kamerayê dibîne",
+          "desc": "Kameraya te vedike, jê re dinêre û tiştê li pêş te heye rave dike.",
+          "example": "Bêje: \"li kamerayê binêre û bêje tu çi dibînî\""
+        },
+        {
+          "id": "vision.camera_off",
+          "name": "Kamerayê digire",
+          "desc": "Gava tu bibêjî, bi her zimanî, dîmena kameraya zindî di cih de digire.",
+          "example": "Bêje: \"kamerayê bigire\""
+        },
+        {
+          "id": "vision.screenshot",
+          "name": "Wêneyê ekranê digire",
+          "desc": "Ekranê wêne dike û wêneyî li cihekî ku tu careke din bibînî tomar dike.",
+          "example": "Bêje: \"wêneyê ekranê bigire\""
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "icon": "🎬",
+      "name": "Medya û Şahî",
+      "summary": "Vîdyo, muzîk û pirtûkxaneya lîstikên te.",
+      "features": [
+        {
+          "id": "media.youtube_play",
+          "name": "Vîdyoyên YouTube dilîze",
+          "desc": "Li gorî ravekirina te vîdyoyekê dibîne û di cih de dest bi lîstinê dike.",
+          "example": "Bêje: \"li YouTubeê muzîka kurdî lêxe\""
+        },
+        {
+          "id": "media.youtube_summary",
+          "name": "Vîdyoyên dirêj kurt dike",
+          "desc": "Li şûna te vîdyoyeke saetekê temaşe dike û guhertoya kurt radestî te dike.",
+          "example": "Bêje: \"vê vîdyoya YouTubeê kurt bike\""
+        },
+        {
+          "id": "media.trending",
+          "name": "Herkes çi temaşe dike",
+          "desc": "Vîdyoyên ku niha li welatê tu bi nav bikî populer in nîşanî te dide.",
+          "example": "Bêje: \"vîdyoyên populer ên Iraqê nîşanî min bide\""
+        },
+        {
+          "id": "media.games",
+          "name": "Lîstikên te nû dike",
+          "desc": "Lîstikên Steam û Epic saz û nû dike û ji te re dibêje daxistin çawa diçe.",
+          "example": "Bêje: \"hemû lîstikên min ên Steamê nû bike\"",
+          "requires": "Divê Steam an Epic Games saz be"
+        },
+        {
+          "id": "media.games_night",
+          "name": "Bi şev lîstikan daxîne",
+          "desc": "Nûkirina lîstikan di nîvê şevê de dimeşîne û piştî xilasbûnê dikare PCê bitemirîne.",
+          "example": "Bêje: \"her şev di saet 3ê de lîstikên min nû bike\"",
+          "requires": "Divê Steam an Epic Games saz be"
+        }
+      ]
+    },
+    {
+      "id": "dev",
+      "icon": "⌨",
+      "name": "Pêşxistin",
+      "summary": "Bi te re nermalavê dinivîse, sererast dike û ava dike.",
+      "features": [
+        {
+          "id": "dev.write",
+          "name": "Ji te re kodê dinivîse",
+          "desc": "Ravekirineke sade dike bernameyeke bixebite û li cihê tu bixwazî tomar dike.",
+          "example": "Bêje: \"skrîpteke Python binivîse ku navê wêneyên min li gorî dîrokê biguherîne\""
+        },
+        {
+          "id": "dev.explain",
+          "name": "Kodê rave û sererast dike",
+          "desc": "Pelekî ku jixwe li cem te ye vedike, dibêje çi dike û tiştê xerabûyî tamîr dike.",
+          "example": "Bêje: \"rave bike ev pel çi dike\""
+        },
+        {
+          "id": "dev.run",
+          "name": "Dimeşîne û çewtiyan sax dike",
+          "desc": "Bernameya te dimeşîne, çewtiyên derdikevin dixwîne û bi xwe wan sererast dike.",
+          "example": "Bêje: \"vê skrîptê bimeşîne û çewtiyan sererast bike\""
+        },
+        {
+          "id": "dev.project",
+          "name": "Projeyên temam ava dike",
+          "desc": "Projeyeke pir-pelî plan dike, dinivîse, pêdiviyên wê saz dike û dide xebitandin.",
+          "example": "Bêje: \"bi Python sepaneke lîsteya karan ji min re ava bike\""
+        },
+        {
+          "id": "dev.review",
+          "name": "Pelên kodê dinirxîne",
+          "desc": "Pelekî kodê bavêje hundir: wê dinirxîne, şîrove dike, rêk dixe an testan jê re dinivîse.",
+          "example": "Pelekî kodê bavêje, paşê bêje: \"vê kodê binirxîne\""
+        }
+      ]
+    },
+    {
+      "id": "phone",
+      "icon": "📱",
+      "name": "Telefon û Kontrola Dûr",
+      "summary": "Ji telefona xwe, li her derê malê bi kar bîne.",
+      "features": [
+        {
+          "id": "phone.pair",
+          "name": "Ji telefonê kontrol bike",
+          "desc": "Tenê koda QR bixwîne û telefona te dibe kumandeya tevahiya alîkar.",
+          "example": "Di panela CONTROLS de pêl REMOTE CONTROL bike."
+        },
+        {
+          "id": "phone.voice",
+          "name": "Ji telefonê pê re biaxive",
+          "desc": "Di telefona xwe de biaxive, ew li ser kompîterê bersiv dide, mîna ku tu li wir bî.",
+          "example": "Di telefona xwe de bêje: \"li ser ekrana min çi heye?\""
+        },
+        {
+          "id": "phone.files",
+          "name": "Ji telefonê pelan bişîne",
+          "desc": "Ji telefona xwe wêneyekî an belgeyekê bişîne û di cih de li ser wê bipirse.",
+          "example": "Ji telefonê wêneyekî bişîne, paşê bipirse: \"ev çi ye?\""
+        },
+        {
+          "id": "phone.secure",
+          "name": "Taybet û şîfrekirî",
+          "desc": "Girêdana telefonê bi PINê girtî ye, şîfrekirî ye û di nav tora mala te de dimîne.",
+          "example": "Pêl REVOKE DEVICES bike da ku girêdana hemû telefonan bi carekê qut bibe."
+        },
+        {
+          "id": "phone.message",
+          "name": "Ji te re peyaman dişîne",
+          "desc": "Bi deng peyameke WhatsApp, Telegram, Instagram, Signal, Discord an Messenger dişîne.",
+          "example": "Bêje: \"ji Dara re WhatsApp bişîne, bêje ezê dereng bimînim\"",
+          "requires": "Divê sepana peyaman saz û têketî be"
+        }
+      ]
+    },
+    {
+      "id": "system",
+      "icon": "📊",
+      "name": "Pergal û Şopandin",
+      "summary": "Çav li kompîtera te û bîranînên te digire.",
+      "features": [
+        {
+          "id": "system.status",
+          "name": "Rewşa zindî ya PCê",
+          "desc": "Rapora pêvajoker, bîr, GPU, germahî, dema xebatê û çend bername dixebitin dide.",
+          "example": "Bêje: \"kompîtera min çawa ye?\""
+        },
+        {
+          "id": "system.hud",
+          "name": "Pîvanên hertim vekirî",
+          "desc": "Bariyên li kêleka çepê CPU, bîr, tor, GPU û germahiyê bi awirekê nîşan didin.",
+          "example": "Hertim li ser ekranê ye — ne hewce ye tu bixwazî."
+        },
+        {
+          "id": "system.alerts",
+          "name": "Berî pirsgirêkê hişyar dike",
+          "desc": "Gava kompîter zêde germ dibe an bîr pir kêm dimîne, bi xwe dest bi axaftinê dike.",
+          "example": "Bi xwe çêdibe — ne hewce ye tu tiştekî vekî."
+        },
+        {
+          "id": "system.reminders",
+          "name": "Di dema xwe de tîne bîra te",
+          "desc": "Bîranînekê datîne ku tam di roj û saeta te gotî de derdikeve û bi deng dibêje.",
+          "example": "Bêje: \"sibê saet 9ê bîne bîra min ku ez telefonî bankê bikim\""
+        },
+        {
+          "id": "system.topics",
+          "name": "Mijaran ji te re dişopîne",
+          "desc": "Mijarekê bêdeng li paş dişopîne û gava tiştekî nû çêbibe ji te re dibêje.",
+          "example": "Bêje: \"nûçeyên otomobîlên elektrîkî bişopîne\""
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "icon": "🧠",
+      "name": "Bîr û Kesane",
+      "summary": "Fêr dibe ku tu kî yî û her tim ya te dimîne.",
+      "features": [
+        {
+          "id": "memory.remembers",
+          "name": "Te bi bîr digire",
+          "desc": "Nav, bajar, kar, tam û planên te bêdeng diparêze, êdî ne hewce ye tu dubare bikî.",
+          "example": "Bêje: \"xwarina min a bijare dolme ye\""
+        },
+        {
+          "id": "memory.recall",
+          "name": "Ji ya dawî berdewam dike",
+          "desc": "Rêza axaftina te ya dawî diparêze, îro ji cihê ku duh sekinî dest pê dike.",
+          "example": "Bêje: \"li ser min çi tê bîra te?\""
+        },
+        {
+          "id": "memory.forget",
+          "name": "Her tişt li ser PCê dimîne",
+          "desc": "Tiştê li ser te tê bîra wê di pelekî li ser kompîtera te de tê parastin, ne li cloudê.",
+          "example": "Bêje: \"tu li ser malbata min çi dizanî?\""
+        },
+        {
+          "id": "memory.name",
+          "name": "Navekî xwe lê bike",
+          "desc": "Navê alîkar biguherîne û jê re bêje çawa gazî te bike, da ku wek dilê te silavê li te bike.",
+          "example": "Di panela CONTROLS de pêl CUSTOMISE ASSISTANT bike."
+        },
+        {
+          "id": "memory.shortcut",
+          "name": "Bi klîkekê ji sermaseyê",
+          "desc": "Kurterêyekê datîne sermaseya te, wisa alîkar bi du klîkan dest pê dike.",
+          "example": "Di panela CONTROLS de pêl CREATE DESKTOP SHORTCUT bike."
+        }
+      ]
+    }
+  ]
+}

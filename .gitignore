@@ -1,0 +1,61 @@
+# ── SECRETS — never commit these ────────────────────────────────────────────
+# api_keys.json holds a live Gemini API key plus personal settings.
+Mark-L/config/api_keys.json
+Mark-L/config/*.json
+!Mark-L/config/defaults.json
+
+# TLS material for the phone dashboard
+Mark-L/config/certs/
+*.key
+*.crt
+*.pem
+*.pfx
+
+# ── USER DATA — personal, must never be published ───────────────────────────
+Mark-L/memory/long_term.json
+Mark-L/memory/*.json
+
+# Runtime artefacts written by the action modules
+Mark-L/uploads/
+Mark-L/downloads/
+Mark-L/screenshots/
+Mark-L/macros/
+Mark-L/logs/
+*.log
+audit.jsonl
+
+# ── PYTHON ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+
+# ── BUILD OUTPUT (PyInstaller) ──────────────────────────────────────────────
+build/
+dist/
+*.manifest
+!Mark-L/MarkL.spec
+
+# ── LOCAL-ONLY ──────────────────────────────────────────────────────────────
+# Preserved history of the upstream FatihMakes/Mark-L clone
+.git-upstream-backup/
+# Backup copy of an earlier version of the app
+_OLD_COPY_Mark-L-main/
+.claude/
+
+# ── EDITORS / OS ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+desktop.ini
+.DS_Store

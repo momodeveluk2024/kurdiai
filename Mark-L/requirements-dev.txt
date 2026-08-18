@@ -1,0 +1,7 @@
+# Build-time only — NOT needed to run Mark-L from source.
+# Install into the same interpreter that has requirements.txt:
+#     python -m pip install -r requirements-dev.txt
+# Then build with:
+#     python build_exe.py
+
+pyinstaller>=6.0
